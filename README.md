@@ -28,11 +28,17 @@ Operations are denoted using the standard XOR operator `+`. A line may contain t
 **Example from the AES MixColumns circuit:**
 
 t[32] = t[2] + t[10]
+
 t[33] = t[1] + t[25]
+
 t[34] = t[18] + t[33]
+
 t[35] = t[9] + t[25]
+
 t[37] = t[10] + t[26] + t[35]
+
 ...
+
 t[46] = t[44] + t[45]  y[24]
 
 In this example, `t[0]`–`t[31]` are the 32 input bits, `t[32]`, `t[33]`, … are intermediate nodes, and `t[46]` is marked as output `y[24]`.
